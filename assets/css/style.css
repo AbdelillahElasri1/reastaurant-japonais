@@ -439,8 +439,10 @@ ul li a:hover{
 }
 
 .menu .reciept {
-    background-image: linear-gradient(to bottom, rgb(239, 226, 86) , yellow);
+    background-color: #FCBA1C;
     width: 100%;
+    height: 300px;
+    overflow-y: scroll;
 }
 
 .price_test {
@@ -662,4 +664,27 @@ section .about-mini-container{
     display: flex;
     flex-direction: column;
 }
+.test_produit {
+    display: flex;
+}
+.pann-image {
+    width: 100px;
+}
+/* .test_produit-name-prix{
+    text-align: center;
+} */
+.test_produit-name-prix{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pannier{
+    display: block;
+}
+.total{
+    
+}
+.text-total{
+    text-align: left;
 
+}
