@@ -551,6 +551,7 @@ ul li a:hover{
     color: #fff;
     width: 100px;
     height: 40px;
+    border-radius:20px;
 }
 .price{
     padding-top: 10px;
