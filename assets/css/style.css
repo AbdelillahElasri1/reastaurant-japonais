@@ -440,9 +440,11 @@ ul li a:hover{
 
 .menu .reciept {
     background-color: #FCBA1C;
+    /* width: 100%; */
     width: 100%;
-    height: 300px;
+    height: 550px;
     overflow-y: scroll;
+    border-radius: 10px;
 }
 
 .price_test {
@@ -678,13 +680,22 @@ section .about-mini-container{
     flex-direction: column;
     align-items: center;
 }
-.pannier{
-    display: block;
-}
-.total{
+
+/* .total{
     
-}
+} */
 .text-total{
     text-align: left;
-
 }
+.btn_pay{
+    display: flex;
+}
+.btn_pay .btn-achat{
+    width: 100px;
+    height: 25px;
+    margin-left: 50px;
+    border-radius: 6px;
+}
+.pannier{
+    position: absolute;
+} 
