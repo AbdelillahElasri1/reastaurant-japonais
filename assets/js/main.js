@@ -111,8 +111,6 @@ btns.forEach(btn=>{
         let id=btn.value;
         for(let i=0;i<produits.length;i++){
             if(produits[i].id==id){
-                container += parseInt(produits[i].prix);
-                total.innerHTML+= container+' $';
                 cart.innerHTML+=`
             <div class="test_produit">
                 <div class="test_produit-image">
@@ -124,16 +122,17 @@ btns.forEach(btn=>{
                 </div>
             </div>
                 `;
+                container += parseInt(produits[i].prix);
             }
         } 
+        // total.innerHTML+= container+' $';
             console.log("total = " ,container);
-            // total.innerHTML = `
-            //     <div class="total">
-            //     <h4 id="total-prix" style="text-align: left;">Total = ${container}</h4>
-            //     </div>
-            //     `;
+            total.innerHTML = `
+                <div class="total">
+                <h4 id="total-prix" style="text-align: left;">Total = ${container}</h4>
+                </div>
+                `;
             // total.innerHTML+= container+' $';
-           
     })
 })
 
