@@ -193,9 +193,13 @@ ul li a:hover{
     display: flex ;
     flex-direction:row;
     width: 1263.33px;
-    height: 327.33px;
+    /* height: 327.33px; */
+    height: 200px;
     background-color: rgb(34, 31, 31);
     padding-top: 10%;
+}
+#important{
+    height: 300px;
 }
 .footer1{
     display: flex;
@@ -306,24 +310,30 @@ ul li a:hover{
 
 /* contact start */
 .newsletter .container {
-    display: grid !important;
+    /* display: grid !important;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     align-items: center;
     justify-content: space-evenly;
-    padding-top: 50px;
+    padding-top: 50px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 30px;
 }
 
-.newsletter .container .inp {
-    grid-column: 2;
-}
-
+/* .newsletter .container .inp {
+    /* grid-column: 2; 
+} */
 .newsletter .container .inp form input, textarea {
     width: 100%;
     border: 1px solid #ccc;
     padding: 10px 10px;
+    /* margin-left: 100px; */
 }
 .newsletter .container .inp form .btn {
+    /* width: 50%; */
     width: 50%;
 }
 
@@ -331,37 +341,100 @@ ul li a:hover{
     background-color: #e99c2f;
     color: white;
     font-weight: bold;
+    width: 500px;
 }
 
-.newsletter .container .inp form {
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: repeat(4, auto);
-    justify-content: center;
-    width: 80%;
-}
 
+/* 
 .newsletter .container .inp form .btn {
     justify-self: center;
 }
 
 .newsletter .container .inp form > div {
     margin-bottom: 20px;
-}
+} */
 
-.contact .container .header_contact {
+/* .contact .container .header_contact {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     text-align: center;
     width: 70%;
     grid-column: 1;
+    gap: 1rem;
     margin-top: -10rem;
 }
 .contact .container .header_contact h3 {
     font-size: 40px;
     margin-bottom: 30px;
+} */
+#container-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
 }
+#container-contact .inpt{
+    margin-left: 10%;
+}
+.inpt form input {
+    width: 656px;
+    height: 46px;
+    margin-top: 20px;
+}
+.container .header_contact h1{
+    font-size: large;
+    color: black;
+    margin-bottom: 30px;
+}
+.container .header_contact p {
+    color: black;
+    margin-bottom: 8px;
+}
+.container .inpt .validBtn{
+    width: 120px;
+    background-color: #e99c2f;
+    margin-bottom: 20px;
+}
+.container .header_contact span {
+    color: black;
+}
+
+.cart{
+    /* height: 50px;
+    width: 120px; */
+    background-color: #FFE0E0;
+    width: 30%;
+    height: auto;
+    margin-left: 33%;
+    
+}
+.cart .product{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.cart .product img{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+.heart {
+    display: flex;
+    flex-direction: column;
+}
+.cart .btnxxx{
+    width: 70px;
+    height: 30px;
+    background-color: #e99c2f;
+    margin-left: 40%;
+}
+.cart .tootal{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
 
 
 @media (max-width: 687px) {
@@ -412,7 +485,9 @@ ul li a:hover{
     justify-content: center;
     align-items:flex-end;
 }
-
+.show {
+    display: block;
+}
 
 
 
@@ -423,6 +498,7 @@ ul li a:hover{
     gap: 1rem;
     padding-top: 150px;
     width: 90%;
+    display: none;
 }
 
 .menu .menu_container {
@@ -472,6 +548,7 @@ ul li a:hover{
     display: flex;
     align-items: center;
     gap: 18rem;
+    display: none;
 }
 .test-menu .test-menu-container{
     display: flex;
@@ -490,6 +567,7 @@ ul li a:hover{
     display: flex;
     align-items: center;
     gap: 18rem;
+    display: none;
 }
 .test-jus .test-jus-container{
     display: flex;
@@ -562,7 +640,7 @@ ul li a:hover{
     color: #fff;
     width: 100px;
     height: 40px;
-    border-radius:20px;
+    /* border-radius:20px; */
 }
 .price{
     padding-top: 10px;
@@ -1001,6 +1079,7 @@ section .about-mini-container{
         display: flex;
         flex-direction: column;
         width: 428px;
+        padding-bottom: 20px;
     }
     .input-email{
         margin-right:400px ;
@@ -1135,21 +1214,18 @@ section .about-mini-container{
         width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* align-items: center; */
+    justify-content: space-between; 
+    align-items: center;
     }
-    .header_contact{
+    /* .header_contact{
         padding-top: 150px;
-        padding-left: 40px;
+        padding-left: 0px;
         color: black;
     }
     .container .inp{
-        padding-left: 50px;
+        padding-left: 5px;
         color: black;
-    }
-    .reciept{
-        display: none;
-    }
+    } */
     .mongo{
         width: 428px;
     }
@@ -1161,5 +1237,77 @@ section .about-mini-container{
     section .about-mini-container{
         background-image: url("../images/burger-image.png") !important;
         height: 434px;
+    }
+    .menu {
+        padding-left: 25px;
+    }
+    .cart{
+        /* height: 50px;
+        width: 120px; */
+        background-color: #FFE0E0;
+        width: 70%;
+        height: auto;
+        margin-left: 15%;
+        
+    }
+    .cart .product{
+        display: flex;
+        align-items: center;
+        gap: 2.1rem;
+    }
+    .cart .product img{
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+    }
+    .heart {
+        display: flex;
+        flex-direction: column;
+    }
+    .cart .valid{
+        width: 70px;
+        height: 30px;
+        background-color: #e99c2f;
+        margin-left: 40%;
+    }
+    .cart .tootal{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+    .newsletter .container{
+        display: flex;
+        flex-direction: column;
+    }
+    #container-contact{
+        margin-left: 1px;
+    }
+    .inpt form input {
+        width: 300px;
+        height: 46px;
+        margin-top: 20px;
+        margin-left: 2px;
+
+    }
+    .container .header_contact h1{
+        font-size: large;
+        color: black;
+        /* margin-bottom: 30px; */
+        margin-top: 50%;
+        margin-left: 2px;
+        
+    }
+    .container .header_contact p {
+        color: black;
+        margin-bottom: 8px;
+    }
+    .container .inpt .validBtn{
+        width: 120px;
+        background-color: #e99c2f;
+        margin-bottom: 20px;
+        margin-left: 50%;
+    }
+    .container .header_contact span {
+        color: black;
     }
 }
